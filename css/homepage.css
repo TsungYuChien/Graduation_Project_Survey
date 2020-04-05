@@ -1,0 +1,344 @@
+body{
+    overflow: hidden;
+}
+@media (max-width: 767.98px){
+    .title{
+        display: inline-block;
+        float: left;
+        width: 100vw;
+        height: 15vh;
+    }
+    .title-left{
+        float: left;
+        width: 48vw;
+        height: 15vh;
+        padding-right: 2vw;
+        background-color: #00AA90;
+        text-align: right;
+        line-height: 16vh;
+        font-weight: bold;
+        font-size: 11vh;
+        color: white;
+    }
+    .title-right{
+        float: left;
+        width: 48vw;
+        height: 15vh;
+        padding-left: 2vw;
+        background-color: white;
+        text-align: left;
+        line-height: 16vh;
+        font-weight: bold;
+        font-size: 11vh;
+        color: #00AA90;
+    }
+    .MainBody{
+        width: 100vw;
+        height: 80vh;
+        overflow-y: scroll;
+    }
+    .fillin-form{
+        height: auto;
+        padding-top: 2.5vh;
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+    .stu-input{
+        display: inline-block;
+        width: 70vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        border: 2px solid #00AA90;
+        border-radius: 5px;
+        background-color: #00AA90; 
+        
+    }
+    .stu-input span{
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        line-height: 5vh;
+        height: 5vh;
+        width: 15vw;
+        font-size: 2.5vh;
+        color: white;
+    }
+    .stu-input input{
+        display: inline-block;
+        vertical-align: top;
+        width: 49vw;
+        height: 5vh;
+        border: none;
+        padding: 0 0 0 4vw;
+        outline: none;
+        font-size: 2.5vh;
+        color: #00AA90;
+    }
+    
+    /* Select Input */
+    .stu-input-select{
+        display: inline-block;
+        width: 70vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        border: 2px solid #00AA90;
+        border-radius: 5px;
+        background-color: #00AA90; 
+        
+    }
+    .stu-input-select span{
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        line-height: 5vh;
+        height: 5vh;
+        width: 15vw;
+        font-size: 2.5vh;
+        color: white;
+    }
+    .box-1{
+        display: inline-block;
+        vertical-align: top;
+        width: 53vw;
+        height: 5vh;
+    }
+    .box-1 select{
+        vertical-align: top;
+        width: 53vw;
+        height: 5vh;
+        outline: none;
+        border: none;
+        padding: 0 0 0 3vw;
+        font-size: 2.5vh;
+        color: #00AA90; 
+    }
+    .box-1 select option{
+        padding: 0;
+    }
+    /* Select Input 2 */
+    .stu-input-select2{
+        display: inline-block;
+        width: 70vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        border: 2px solid #00AA90;
+        border-radius: 5px;
+        background-color: #00AA90; 
+        
+    }
+    .stu-input-select2 span{
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        line-height: 5vh;
+        height: 5vh;
+        width: 24vw;
+        font-size: 2.5vh;
+        color: white;
+    }
+    .box-2{
+        display: inline-block;
+        vertical-align: top;
+        width: 44vw;
+        height: 5vh;
+    }
+    .box-2 select{
+        vertical-align: top;
+        width: 44vw;
+        height: 5vh;
+        outline: none;
+        border: none;
+        padding: 0 0 0 3vw;
+        font-size: 2.5vh;
+        color: #00AA90;
+    }
+    .box-2 select option{
+        padding: 0;
+    }
+    .set-col{
+        display: inline-block;
+    }
+    /* Detail Input */
+    .detail {
+      display: inline-block;
+      padding: 10px;
+      width: 45vw;
+      height: 16vh; 
+      margin-bottom: 2vh;
+      border: 2px solid #00AA90;
+      border-radius: 5px;
+      text-align: left;
+      color: #00AA90;
+      font-size: 2vh;
+    }
+    .container{
+        display: inline-block;
+        position: relative;
+        padding-left: 7vw;
+        margin-bottom: 2vh;
+        margin-right: 3vw;
+        cursor: pointer;
+        font-size: 2.5vh;
+        
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+        /* 把預設checkbox藏起來 */
+    .container input[type="checkbox"]{
+        display: none;
+    }
+    .checkmark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 2.5vh;
+        width: 2.5vh;
+        background-color: #eee;
+    }
+        /* 當checkbox被按下 把背景顏色改成#00AA90 */
+    .container input[type="checkbox"]:checked ~.checkmark{
+        background-color: #00AA90;
+    }
+    .checkmark:after{
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    .container input[type="checkbox"]:checked ~.checkmark:after{
+        display: block;
+    }
+        /* 做勾勾 */
+    .container .checkmark:after{
+        left: 1.5vw;
+        width: 1vw;
+        height: 1.5vh;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    /* ........ */
+    .tips{
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 3vh;
+        margin-left: 1vw;
+        width: 15vw;
+        height: 15vh;
+        writing-mode: vertical-rl;
+        color: #00AA90;
+        font-size: 2.5vh;
+    }
+    
+    /* Radio Button */
+    .done{
+        display: inline-block;
+        width: 70vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        border: 2px solid #00AA90;
+        border-radius: 5px;
+        background-color: #00AA90;  
+        font-size: 2vh;
+        color: white;
+        line-height: 5vh;
+    }
+    .contain{
+        display: inline-block;
+        position: relative;
+        padding-left: 5vw;
+        margin-right: 1vw;
+        cursor: pointer;
+        font-size: 2vh;
+        
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .contain input{
+        display: none;
+    }
+    .chkmark{
+        position: absolute;
+        top: 25%;
+        left: 0;
+        height: 2vh;
+        width: 2vh;
+        border-radius: 50%;
+        background-color: #eee;
+    }
+    .contain input:checked ~ .chkmark{
+        background-color: #FFF;
+    }
+    .chkmark:after{
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    .contain input:checked ~ .chkmark:after{
+        display: block;
+    }
+    .contain .chkmark:after{
+        top: 25%;
+        left: 25%;
+        width: 1vh;
+        height: 1vh;
+        border-radius: 50%;
+        background: #00AA90;
+    }
+    
+    /* below button */
+    .stu-input-4{
+        display: inline-block;
+        width: 70vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        border: 2px solid #00AA90;
+        border-radius: 5px;
+        background-color: #00AA90; 
+        
+    }
+    .stu-input-4 span{
+        display: inline-block;
+        vertical-align: top;
+        text-align: center;
+        line-height: 5vh;
+        height: 5vh;
+        width: 24vw;
+        font-size: 2.5vh;
+        color: white;
+    }
+    .stu-input-4 input{
+        display: inline-block;
+        vertical-align: top;
+        width: 40vw;
+        height: 5vh;
+        border: none;
+        padding: 0 0 0 4vw;
+        outline: none;
+        font-size: 2.5vh;
+        color: #00AA90;
+    }
+    
+    /* Submit Button */
+    .submit-btn input{
+        width: 15vw;
+        margin-left: 25vw;
+        margin-bottom: 2vh;
+        background-color: #00AA90;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    /* Bottom */
+    .bottom{
+        width: 100vw;
+        height: 5vh;
+        background-color: #00AA90;
+    }
+}

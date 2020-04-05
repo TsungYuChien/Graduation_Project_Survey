@@ -1,0 +1,131 @@
+@media (max-width: 767.98px){
+    
+    .title-top{
+        display: inline-block;
+        float: left;
+        width: 100vw;
+        height: 15vh;
+    }
+    .title-left{
+        float: left;
+        width: 48vw;
+        height: 15vh;
+        padding-right: 2vw;
+        background-color: #00AA90;
+        text-align: right;
+        line-height: 16vh;
+        font-weight: bold;
+        font-size: 11vh;
+        color: white;
+    }
+    .title-right{
+        float: left;
+        width: 48vw;
+        height: 15vh;
+        padding-left: 2vw;
+        background-color: white;
+        text-align: left;
+        line-height: 16vh;
+        font-weight: bold;
+        font-size: 11vh;
+        color: #00AA90;
+    }
+    .main-content{
+        width: 100vw;
+        height: 77vh;
+        padding-top: 3vh;
+    }
+    /* Main Content */
+    .main-green{
+        width: 90vw;
+        height: 73vh;
+        margin-left: 5vw;
+        padding-top: 1vh;
+        background-color: #00AA90;
+    }
+    /* Message Display */
+    .msg-display{
+        width: 81vw;
+        height: 59vh;
+        margin-left: 2.5vw;
+        padding: 1vh 2vw;
+        background-color: white;
+    }
+    .msg-display span{
+        color: #00AA90;
+        font-size: 2.5vh;
+    }
+    .msg-display label{
+        color: #00AA90;
+        font-size: 2.5vh;
+    }
+    .col{
+        display: inline-block;
+    }
+    .mark{
+        display: inline-block;
+        width: 6vw;
+        vertical-align: top;
+    }
+    .msg{
+        display: inline-block;
+        width: 75vw;
+    }
+    
+    
+    /* Send Message */
+    .msg-send{
+        width: 85vw;
+        height: 12vh;
+        margin-left: 2.5vw;
+        font-size: 2.5vh;
+        line-height: 6vh;
+    }
+    .msg-send span{
+        color: white;
+    }
+    .msg-send input{
+        width: 20vw;
+        height: 3.5vh;
+        border-radius: 5px;
+        border: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        background-color: white;
+        font-size: 2.5vh;
+        color: #00AA90;
+        outline: none;
+    }
+    .msg-send select{
+        width: 17vw;
+        height: 3.5vh;
+        outline: none;
+        border: 1px solid white;
+        font-size: 2.5vh;
+        background-color: #00AA90;
+        color: white; 
+    }
+    .msg-send select option{
+        padding: 0;
+    }
+    #long-text{
+        width: 35vw;
+    }
+    .msg-send input[type="submit"]{
+        margin-left: 1vw;
+        width: 15vw;
+        height: 3.5vh;
+        line-height: 3.5vh;
+        text-align: center;
+    }
+    .msg-send select{
+        
+    }
+    
+    /* Bottom */
+    .bottom{
+        width: 100vw;
+        height: 5vh;
+        background-color: #00AA90;
+    }
+}

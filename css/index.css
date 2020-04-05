@@ -1,0 +1,66 @@
+@media (max-width: 767.98px){
+
+    
+    .title{
+        display: inline-block;
+        float: left;
+        width: 100vw;
+        height: 15vh;
+    }
+    .title-left{
+        float: left;
+        width: 48vw;
+        height: 15vh;
+        padding-right: 2vw;
+        background-color: #00AA90;
+        text-align: right;
+        line-height: 16vh;
+        font-weight: bold;
+        font-size: 11vh;
+        color: white;
+    }
+    .title-right{
+        float: left;
+        width: 48vw;
+        height: 15vh;
+        padding-left: 2vw;
+        background-color: white;
+        text-align: left;
+        line-height: 16vh;
+        font-weight: bold;
+        font-size: 11vh;
+        color: #00AA90;
+    }
+    .MainBody{
+        width: 100vw;
+        height: 80vh;
+        text-align: center;
+    }
+    .content-title{
+        padding-top: 10vh;
+        font-size: 2.5vh;
+        font-weight: bold;
+        color: #00AA90;
+    }
+    .select-btn{
+        width: 80vw;
+        height: 10vh;
+        margin: 6vh auto;
+        background-color: #00AA90;
+        border-radius: 1vh;
+        text-align: center;
+        line-height: 10vh;
+        cursor: pointer;
+    }
+    .MainBody a{
+        text-decoration: none;
+        font-size: 2.5vh;
+        color: white;
+    }
+    
+    .bottom{
+        width: 100vw;
+        height: 5vh;
+        background-color: #00AA90;
+    }
+}
